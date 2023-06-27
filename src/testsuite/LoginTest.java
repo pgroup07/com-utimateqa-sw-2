@@ -38,6 +38,7 @@ public class LoginTest extends BaseTest {
 
         String actualMsg = "Invalid email or password.";
         String expectedMsg = driver.findElement(By.xpath("//li[@class='form-error__list-item']")).getText();
+        Assert.assertEquals("Error Message is not Displayed", expectedMsg, actualMsg);
     }
 
 
